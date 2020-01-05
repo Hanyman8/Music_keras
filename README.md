@@ -38,3 +38,9 @@ everythink should work
 Results of generated midi files can be found in the file `results`
 Final model cal be saved (showed at the end of the notebook)
 
+
+## References:
+https://towardsdatascience.com/generating-pokemon-inspired-music-from-neural-networks-bc240014132
+https://github.com/corynguyen19/midi-lstm-gan
+https://colinraffel.com/projects/lmd/
+https://towardsdatascience.com/how-to-generate-music-using-a-lstm-neural-network-in-keras-68786834d4c5
