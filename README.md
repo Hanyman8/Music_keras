@@ -1,40 +1,40 @@
-# mvi_sp
+# Music_keras
 
-## Generování hudby s GANy
+## Generating music with GAN
 
-Naučte Generative Adversarial Network (GAN) generovat hudbu. Vyberte si, jestli budete generovat pouze noty nebo celou audio stopu.
+Learn Generative Adversarial Network (GAN) to generate music.
 
+Some parts can be in Czech, because it was semestral work at Faculty of information technology at Czech technical university in Prague
 
-# Jak to rozběhat
+# How to run this
 
-naklonujte si repozitář:
+clone this repository:
 ```
-git clone git@gitlab.fit.cvut.cz:hanusji8/mvi_sp.git
+git clone git@github.com:Hanyman8/Music_keras.git
 ```
-vytvořte si virtuální prostředí a aktivujte ho
-HOW TO: https://naucse.python.cz/2019/mipyt-zima/fast-track/install/
-
-nainstalujte balíčky
+make a virtual environment and install requirements
 ```
 python -m pip install -r requirements.txt
 ```
 
-v adresáři vytvořte složky `results`, `static`, `static/classical_midi_piano`
+in main directory create directories `results`, `static`, `static/classical_midi_piano`
 
 
 ## Data
-Stáhněte si data `clean` = clean_midi, `aligned` = lmd_aligned a `LMD-matched metadata` lmd_matched_h5 ze stránky
+Download data `clean` = clean_midi, `aligned` = lmd_aligned a `LMD-matched metadata` lmd_matched_h5 from website
 https://colinraffel.com/projects/lmd/
-a extrahujte je do složky `static`
+and extract them in the folder `static`
+
+Data source: Colin Raffel. "Learning-Based Methods for Comparing Sequences, with Applications to Audio-to-MIDI Alignment and Matching". PhD Thesis, 2016.
 
 
-## Předzpracování dat
-otevřete jupyter notebook a spusťe notebook `data_datapreparation.ipynb`
-Pak spusťte notebook `music_gan.ipynb`
+## Data preparation
+open jupyter notebook `data_datapreparation.ipynb` and run it
+Then run ntoebook `music_gan.ipynb`
 
-a vše by snad mělo fungovat
+everythink should work
 
-## Výsledky
-Výsledky vygenerovaných midi souborů naleznete ve složce results
-Výsledný model se dá uložit (ukázáno na konci notebooku)
+## Results
+Results of generated midi files can be found in the file `results`
+Final model cal be saved (showed at the end of the notebook)
 
